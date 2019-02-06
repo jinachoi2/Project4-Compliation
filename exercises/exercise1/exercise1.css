@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* text */
+.text1 {
+  width: 18%;
+  text-align: right;
+  font-size: 0.75rem;
+  line-height: 117%;
+  position: fixed;
+  left: 0%;
+  top: 26.5%;
+  z-index: 2;
+}
+.text2 {
+  width: 25%;
+  text-align: left;
+  font-size: 1.4rem;
+  line-height: 22%;
+  position: fixed;
+  left: 21%;
+  top: 25%;
+  z-index: 2;
+}
+.text3 {
+  width: 18%;
+  text-align: right;
+  font-size: 0.75rem;
+  position: fixed;
+  left: 0%;
+  top: 70%;
+  z-index: 0;
+}
+.text4 {
+  width: 25%;
+  text-align: left;
+  font-size: 0.75rem;
+  line-height: 22.5%;
+  position: fixed;
+  left: 21%;
+  top: 58.8%;
+  z-index: 0;
+}
+
+
+/* orange rectangles */
+.rectangle1 {
+  width: 49%;
+  height: 59%;
+  background-color: #FFA724;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  z-index: -1;
+}
+.rectangle2 {
+  width: 25%;
+  height: 60%;
+  background-color: #FFA724;
+  position: absolute;
+  left: 49.5%;
+  top: 25%;
+}
+.rectangle3 {
+  width: 13%;
+  height: 60%;
+  background-color: #FFA724;
+  position: absolute;
+  left: 75%;
+  top: 40%;
+}
+.rectangle4 {
+  width: 7%;
+  height: 60%;
+  background-color: #FFA724;
+  position: absolute;
+  left: 88.5%;
+  top: 30%;
+}
+.rectangle5 {
+  width: 4%;
+  height: 60%;
+  background-color: #FFA724;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+}
+
+/* animation */
+@keyframes move1 {
+  0%{transform: translateY(0);}
+  100%{transform: translateY(88%);}
+}
+.rectangle1 {
+  animation:move1 5s infinite;
+  animation-play-state: paused;
+}
+.rectangle1:hover {
+  animation-delay: 0.2s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-play-state: running;
+  z-index: 1;
+  /* how to make it only cover the bottom text? */
+}
+
+@keyframes move2 {
+  0%{transform: translateY(0%);}
+  50%{transform: translateY(60%);}
+  100%{transform: translateY(-50%);}
+}
+.rectangle2 {
+  animation:move2 4s infinite;
+  animation-play-state: paused;
+}
+.rectangle2:hover {
+  animation-delay: 0.2s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+@keyframes move3 {
+  0%{transform: translateY(0%);}
+  50%{transform: translateY(-70%);}
+  100%{transform: translateY(5%);}
+}
+.rectangle3 {
+  animation:move3 2.5s infinite;
+  animation-play-state: paused;
+}
+.rectangle3:hover {
+  animation-delay: 0.1s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+@keyframes move4 {
+  0%{transform: translateY(0%);}
+  50%{transform: translateY(40%);}
+  100%{transform: translateY(-65%);}
+}
+.rectangle4 {
+  animation:move4 1.6s infinite;
+  animation-play-state: paused;
+}
+.rectangle4:hover {
+  animation-delay: 0.2s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+@keyframes move5 {
+  0%{transform: translateY(0%);}
+  100%{transform: translateY(70%);}
+}
+.rectangle5 {
+  animation:move5 1s infinite;
+  animation-play-state: paused;
+}
+.rectangle5:hover {
+  animation-delay: 0.2s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-play-state: running;
+}

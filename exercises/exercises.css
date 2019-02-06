@@ -1,0 +1,190 @@
+/* typefaces */
+  /* body */
+  @import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+    /* font-family: 'Crimson Text', serif; */
+
+
+/* General */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Crimson Text', serif;
+  cursor: url(../images/smlx.cur), auto;
+}
+a:link{
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
+
+/* side nav */
+.navOpen {
+  font-size: 50px;
+  margin-left: 20px;
+  cursor: url(../images/smlX.cur), auto;
+}
+  .navOpen:hover {
+    color: #f1f1f1;
+  }
+.sidenav {
+  height: 350px;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 5px 5px;
+}
+.sidenav a {
+  padding-left: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+  .sidenav a:hover {
+    color: #f1f1f1;
+    cursor: url(../images/smlX.cur), auto;
+    /* color: white; */
+  }
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 40px;
+  margin-left: 50px;
+  cursor: url(../images/smlX.cur), auto;
+}
+.menu {
+  margin-top:80px;
+}
+.menuEx {
+  text-decoration: line-through;
+}
+
+h1 {
+  border: 4px double black;
+  box-shadow: 10px 15px black;
+  width: 200px;
+  text-align: center;
+  margin-top: 10%;
+  margin-left: 2%;
+}
+h2 {
+  border: 1px solid black;
+  box-shadow: 2px 5px black;
+  width: 300px;
+  text-align: center;
+  margin-top: 10%;
+  margin-left: 2%;
+}
+.style, h3 {
+  margin: 30px 2% 40px 2%;
+}
+
+.notes {
+  margin-top: 50px;
+  margin-left: 5%;
+  width: 90%;
+}
+
+.ex1Info, .ex2Info {
+  display: none;
+}
+.imgEx1 {
+  width:90%;
+  margin-left: 5%;
+  border: 1px solid black;
+  box-shadow: 15px 15px black;
+}
+  .imgEx1:hover {
+    box-shadow: none;
+    transition-duration: 1s;
+    cursor: url(../images/X.cur), auto;
+  }
+
+#ex2Title{
+  margin-left: 38%;
+}
+.imgEx2 {
+  width:90%;
+  margin-left: 5%;
+  border: 1px solid black;
+  box-shadow: 15px 15px black;
+}
+  .imgEx2:hover {
+    box-shadow: none;
+    transition-duration: 1s;
+    cursor: url(../images/X.cur), auto;
+  }
+
+
+
+@media screen and (max-width: 414px){
+  #ex2Title{
+    margin-left: 2%;
+  }
+}
+
+  /* Testing grid side bar */
+  /* .gridContainer {
+    display: grid;
+    grid-template-columns: 15% auto;
+    grid-gap: 50px;
+    padding: 10px;
+  }
+  .sideMenu {
+    font-size: 12px;
+    line-height: 0px;
+    word-wrap: break-word;
+    position: fixed;
+    display: block;
+    grid-column-start: 1;
+    border: 1px solid;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 13%;
+    margin-left: 10px;
+  }
+    .menuItems {
+      margin-top: -15px;
+    }
+      a.menuItems:hover {
+        cursor: url(../images/smlx.cur), auto;
+      }
+    .menuX {
+      margin-bottom: 120px;
+      letter-spacing: 20px;
+    }
+  .gridContent {
+    grid-column-start: 2;
+  }
+  .titleBtn {
+    font-family: 'Crimson Text', serif;
+    border: 1px dashed black;
+    box-shadow: 10px 15px black;
+    font-size: 40px;
+    width: 175px;
+    text-align: center;
+    margin-left: 2%;
+    margin-top: 80px;
+  }
+    .titleBtn:hover {
+        cursor: url(../images/smlX.cur), auto;
+      border: 1px solid black;
+      box-shadow: none;
+      transition-duration: 1s;
+    }
+  .btnMenu {
+    list-style: none;
+    display: none;
+  } */

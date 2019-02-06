@@ -1,0 +1,219 @@
+/* typefaces */
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+
+/* general */
+html {
+  cursor: url(../images/smlX.cur), auto;
+}
+body {
+  font-family: 'Crimson Text', serif;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color:black;
+}
+a:hover {
+  cursor: url(../images/X.cur), auto;
+}
+
+/* side nav */
+.navOpen {
+  font-size: 50px;
+  margin-left: 20px;
+  cursor: url(../images/smlX.cur), auto;
+}
+  .navOpen:hover {
+    color: #f1f1f1;
+  }
+.sidenav {
+  height: 350px;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 5px 5px;
+}
+.sidenav a {
+  padding-left: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+  .sidenav a:hover {
+    color: #f1f1f1;
+    cursor: url(../images/smlX.cur), auto;
+  }
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 40px;
+  margin-left: 50px;
+  cursor: url(../images/smlX.cur), auto;
+}
+.menu {
+  margin-top:80px;
+}
+.menuProjects {
+  text-decoration: line-through;
+}
+
+/* body */
+h1 {
+  border: 4px double black;
+  box-shadow: 10px 15px black;
+  width: 200px;
+  text-align: center;
+  margin-top: 10%;
+  margin-left: 2%;
+  z-index: 1;
+}
+h2:hover {
+  box-shadow: none;
+  transition-duration: 1s;
+}
+h3 {
+  margin-left: 7%;
+  font-size: 20px;
+}
+.style {
+  margin: 30px 2% 40px 2%;
+}
+.notes {
+  margin-left: 7%;
+  margin-top: 50px;
+}
+
+/* project 1 */
+.project1Title {
+  border: 1px solid black;
+  box-shadow: 5px 10px black;
+  width: 200px;
+  text-align: center;
+  margin-top: 15%;
+  margin-left: 7%;
+}
+.project1 {
+  margin-top: 80px;
+  display:none;
+  background-color: white;
+}
+  .project1 p  {
+      margin-left: 7%;
+  }
+.imgProject1 {
+  width: 90%;
+  text-align: center;
+  margin-left: 7%;
+  border: 1px solid;
+  box-shadow: 15px 15px;
+}
+  .imgProject1:hover {
+    box-shadow: none;
+    transition-duration: 1s;
+    cursor: url(../images/X.cur), auto;
+  }
+
+/* project 2 */
+.project2Title{
+  border: 1px solid black;
+  box-shadow: 5px 10px black;
+  width: 200px;
+  text-align: center;
+  margin-top: 8%;
+  margin-left: 40%;
+}
+.project2 {
+  display:none;
+  background-color: white;
+  z-index: 20;
+}
+  .project2 p  {
+      margin-left: 7%;
+  }
+.imgProject2 {
+  width: 90%;
+  text-align: center;
+  margin-left: 7%;
+  border: 1px solid;
+  box-shadow: 15px 15px;
+}
+  .imgProject2:hover {
+    box-shadow: none;
+    transition-duration: 1s;
+    cursor: url(../images/X.cur), auto;
+  }
+/* project 3 */
+.project3Title{
+  border: 1px solid black;
+  box-shadow: 5px 10px black;
+  width: 200px;
+  text-align: center;
+  margin-top: 8%;
+  margin-left: 70%;
+}
+.project3 {
+  display:none;
+  background-color: white;
+  z-index: 20;
+}
+  .project3 p  {
+      margin-left: 7%;
+  }
+.imgProject3 {
+  width: 90%;
+  text-align: center;
+  margin-left: 7%;
+  border: 1px solid;
+  box-shadow: 15px 15px;
+}
+  .imgProject3:hover {
+    box-shadow: none;
+    transition-duration: 1s;
+    cursor: url(../images/X.cur), auto;
+  }
+a.processLink {
+  border-bottom: 1px dashed;
+}
+
+
+/* project 4 */
+.project4Title {
+  border: 1px solid black;
+  box-shadow: 5px 10px black;
+  width: 200px;
+  text-align: center;
+  margin-top: 15%;
+  margin-left: 7%;
+}
+.project4 {
+  margin-top: 80px;
+  display:none;
+  background-color: white;
+}
+  .project4 p  {
+    margin-left: 7%;
+  }
+  .notes1{
+    width: 60%;
+    margin-left: 7%;
+  }
+
+
+/* for mobile */
+@media screen and (max-width: 414px){
+  .project3Title{
+    margin-left: 7%;
+  }
+}

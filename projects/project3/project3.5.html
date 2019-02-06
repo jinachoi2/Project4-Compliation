@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Birthday Cards: Card 3</title>
+    <link rel="stylesheet" href="project3.5.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="pageTop">
+      <a href="project3.2.html"><p class="txt1"><b>Jina Choi</b></p></a>
+
+      <button class="txt2Button">file</button>
+        <ul class="txtFile">
+          <a href="project3.about.html" class="logout"><li>about</li></a>
+          <a href="project3.html" class="logout"><li>log out</li></a>
+        </ul>
+
+      <p class="txt4">Jan 25 1998</p>
+      <p id="datetime"></p>
+    </div>
+
+    <div class="pageBody">
+        <img class="card1" src="images2/card1.png" alt="Card 1 Year icon">
+        <img class="card2" src="images2/card2.2.png" alt="Card 2 Year icon">
+        <img class="card3" src="images2/card3.2copy.png" alt="Card 3 Year icon" usemap="#navigation">
+        <img class="card4" src="images2/card4.png" alt="Card 4 Year icon">
+
+      <map name="navigation">
+        <area shape="circle" coords="14,12,11" alt="exit" href="project3.2.html">
+        <area shape="poly" coords="228,112,229,641,612,643,609,112" alt="open card" href="project3.5.1.html">
+      </map>
+    </div>
+
+    <div class="pageBottom">
+      <a href="project3.trash.html"><img class="trashcan" src="images2/trashcan.png" alt="trashcan icon"></a>
+      <a href="project3.note.html"><img class="pencilpaper" src="images2/pencilpaper.png" alt="pencil and paper icon"></a>
+      <img class="cake" src="images2/cake.png" alt="birthday cake icon">
+    </div>
+  </body>
+
+  <script>
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+
+    // pageTop buttons
+    $(document).ready(function(){
+      $(".txt2Button").click(function(){
+        $(".txtFile").toggle();
+      });
+    });
+
+  </script>
+</html>

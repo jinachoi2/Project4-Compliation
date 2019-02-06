@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="about.js"></script>
+  </head>
+
+  <body>
+    <!-- side nav -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#x25CD;</a>
+      <div class="menu">
+        <a href="../index.html"><p>home</p></a>
+        <a href="../about/about.html"><p class="menuAbout">about me</p></a>
+        <a href="../exercises/exercises.html"><p>exercises</p></a>
+        <a href="../projects/projects.html"><p>projects</p></a>
+        <a href="../reading_responses/reading.html"><p>reading responses</p></a>
+        <a href="../processes/processes.html"><p>processes</p></a>
+      </div>
+    </div>
+
+    <span class="navOpen" onclick="openNav()">&#x25CB;</span>
+
+    <!-- about me tags -->
+    <h2 id="jinaTitle">about</h2>
+    <img class="imgMe" src="me.png" alt="illustration of me">
+      <div id="jinaTxt" class="txtJina">
+        <p class="style"><b>. name .</b>
+          <br> &emsp;&emsp;jina choi </p>
+        <p class="style"><b>. country .</b>
+          <br> &emsp;&emsp; south korea </p>
+        <p class="style"><b>. major .</b>
+          <br> &emsp;&emsp; bfa / graphic design / sophomore / transfer </p>
+        <p class="style"><b>. web design experience .</b>
+          <br> &emsp;&emsp; none for programming languages </p>
+        <p class="style"><b>. i like .</b>
+          <br> &emsp;&emsp; small shapes (esp. circles) + thin lines </p>
+        <p class="style"><b>. i also like .</b>
+          <br> &emsp;&emsp; paper + stationery + stickers </p>
+        <p class="style"><b>. i wear .</b>
+          <br> &emsp;&emsp; all black in the winter + mostly white in the summer </p>
+        <p class="style"><b>. i am excited for .</b>
+          <br> &emsp;&emsp; the break + new term </p>
+
+
+        <p class="style1"><b>. currently listening to .</b></p>
+          <p id="ovan">miss fortune (feat. vinxen) -ovan</p>
+          <div id="song">
+            <button class="on" onclick="playAudio()">play</button>
+            <audio id="MissFortune" loop>
+              <source src="MissFortune.mp3" type="audio/mpeg">
+            </audio>
+
+            <button class="off" onclick="pauseAudio()">pause</button>
+            <audio id="MissFortune" loop>
+              <source src="MissFortune.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+      </div>
+
+    <script>
+      var audio = document.getElementById("MissFortune");
+      function playAudio() {
+        audio.play();
+      }
+      function pauseAudio() {
+        audio.pause();
+      }
+    </script>
+  </body>
+</html>

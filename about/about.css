@@ -1,0 +1,131 @@
+/* typefaces */
+  /* body */
+  @import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+  @import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC:200,400');
+  /* display */
+  @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900');
+  @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+  @import url('https://fonts.googleapis.com/css?family=Fahkwang:200,400');
+
+html {
+  cursor: url(../images/smlX.cur), auto;
+}
+body {
+  font-family: 'Crimson Text', serif;
+}
+
+/* side nav */
+.navOpen {
+  font-size: 50px;
+  margin-left: 20px;
+  cursor: url(../images/smlX.cur), auto;
+}
+  .navOpen:hover {
+    color: #f1f1f1;
+  }
+.sidenav {
+  height: 350px;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 5px 5px;
+}
+.sidenav a {
+  padding-left: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+  .sidenav a:hover {
+    color: #f1f1f1;
+    cursor: url(../images/smlX.cur), auto;
+  }
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 40px;
+  margin-left: 50px;
+  cursor: url(../images/smlX.cur), auto;
+}
+.menu {
+  margin-top:80px;
+}
+.menuAbout {
+  text-decoration: line-through;
+}
+
+/* content */
+#jinaTitle{
+  border: 1px solid;
+  box-shadow: 5px 5px;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+  margin-top: 15%;
+  margin-left: 10%;
+}
+  #jinaTitle:hover {
+    box-shadow: none;
+    transition-duration: 1s;
+  }
+.txtJina {
+  margin: 50px 2% 40px 10%;
+  display: none;
+}
+.imgMe {
+  width: 30%;
+  margin-top: 10%;
+  margin-left: 60%;
+  border: 4px double;
+  position: absolute;
+}
+.style1 {
+  border: 1px dotted;
+  width: 200px;
+  text-align: center;
+}
+
+#ovan {
+  margin-left: 30px;
+  text-align: center;
+  border: 1px solid;
+  box-shadow: 3px 5px;
+  width: 250px;
+}
+  #ovan:hover {
+    box-shadow: none;
+    transition-duration: 1s;
+  }
+  #song {
+    display: none;
+  }
+  button.on, .off {
+    font-size: 12px;
+    margin-left: 30px;
+    border: 1px solid;
+    box-shadow: 2px 2px;
+    font-family: 'Crimson Text', serif;
+  }
+    button:hover{
+      box-shadow: none;
+      transition-duration: 0.8s;
+    }
+
+/* for smaller screens */
+@media screen and (max-width: 650px){
+  .imgMe {
+    width: 60%;
+    margin: 5% 2% 2% 15%;
+    position:relative;
+  }
+}

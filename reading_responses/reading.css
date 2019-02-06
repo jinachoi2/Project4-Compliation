@@ -1,0 +1,164 @@
+/* typefaces */
+  /* body */
+  @import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+  @import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC:200,400');
+  /* display */
+  @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900');
+  @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+  @import url('https://fonts.googleapis.com/css?family=Fahkwang:200,400');
+
+/* general */
+html {
+  cursor: url(../images/smlX.cur), auto;
+}
+body {
+  font-family: 'Crimson Text', serif;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color:black;
+}
+a:hover {
+  cursor: url(../images/X.cur), auto;
+}
+h1 {
+  border: 4px double black;
+  box-shadow: 10px 15px black;
+  width: 350px;
+  text-align: center;
+  margin-top: 10%;
+  margin-left: 2%;
+  z-index: 1;
+}
+h2{
+  border: 1px solid black;
+  box-shadow: 5px 10px black;
+  width: 200px;
+  text-align: center;
+}
+h2:hover {
+  box-shadow: none;
+  transition-duration: 1s;
+}
+h3 {
+  margin-left: 2%;
+  margin-top: 50px;
+  font-size: 20px;
+}
+.style {
+  margin: 50px 2% 40px 7%;
+}
+
+/* side nav */
+.navOpen {
+  font-size: 50px;
+  margin-left: 20px;
+  cursor: url(../images/smlX.cur), auto;
+}
+  .navOpen:hover {
+    color: #f1f1f1;
+  }
+.sidenav {
+  height: 350px;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 5px 5px;
+}
+.sidenav a {
+  padding-left: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+  .sidenav a:hover {
+    color: #f1f1f1;
+    cursor: url(../images/smlX.cur), auto;
+  }
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 40px;
+  margin-left: 50px;
+  cursor: url(../images/smlX.cur), auto;
+}
+.menu {
+  margin-top:80px;
+}
+.menuReading {
+  text-decoration: line-through;
+}
+
+/* reading responses */
+a.readLink {
+  border-bottom: 1px dashed;
+}
+
+#read1Title {
+  margin-top: 8%;
+  margin-left: 2%;
+}
+.read1Info {
+  display: none;
+  width: 800px;
+}
+#read2Title {
+  margin-top: 8%;
+  margin-left: 20%;
+}
+.read2Info {
+  display: none;
+  width: 800px;
+}
+#read3Title {
+  margin-top: 4%;
+  margin-left: 45%;
+}
+.read3Info {
+  display: none;
+  width: 800px;
+}
+#read4Title {
+  margin-top: 4%;
+  margin-left: 75%;
+}
+.read4Info {
+  display: none;
+  width: 800px;
+}
+
+
+
+/* for smaller screens */
+@media screen and (max-width: 800px){
+  .read1Info, .read2Info, .read3Info, .read4Info  {
+    width: 95%;
+  }
+  #read1Title {
+    margin-top: 15%;
+  }
+  #read2Title {
+    margin-top: 17%;
+  }
+  #read3Title {
+    margin-top: 25%;
+    margin-left: 45%;
+  }
+  #read4Title {
+    margin-top: 35%;
+    margin-left: 35%;
+  }
+}

@@ -1,0 +1,189 @@
+/* typefaces */
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+/* General styles */
+html {
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=80456), auto;
+}
+body{
+  margin: 0px;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited{
+  color: black;
+}
+a:hover {
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=80456), auto;
+}
+
+.pageTop {
+  font-family: 'Staatliches', cursive;
+  font-size: 14px;
+  width: 100vw;
+  height:40px;
+  background: #FFC0CB;
+  border-bottom: 1px solid black;
+  position:fixed;
+}
+.pageBody {
+  font-family: 'Staatliches', cursive;
+  background: #E6E6FA;
+  width: 100vw;
+  height:100vh;
+  z-index: -10;
+}
+.pageBottom {
+  background: #D0D3D4;
+  border-radius: 25px;
+  position: fixed;
+  left: 43.5vw;
+  width: 24vw;
+  height: 5vh;
+  bottom: 1vh;
+}
+.txt2Button {
+  position: fixed;
+  left: 105px;
+  top: 12px;
+  font-family: 'Staatliches', cursive;
+  font-size: 14px;
+  border: none;
+  background:#FFC0CB;
+}
+.txtFile {
+  position: fixed;
+  left: 72px;
+  top: 35px;
+  line-height: 1.5;
+  list-style-type: none;
+  display: none;
+}
+  a.logout:hover {
+    color: white;
+  }
+.txt1{
+  position: fixed;
+  left: 40px;
+  top: -4px;
+  padding: 3px 5px 3px 5px;
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=80456), auto;
+  z-index: 20;
+}
+.txt2 {
+  position: fixed;
+  left: 110px;
+  top: -4px;
+  padding: 3px 5px 3px 5px;
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=80456), auto;
+}
+.txt4 {
+  position: fixed;
+  right: 125px;
+  top: -4px;
+  padding: 3px 5px 3px 5px;
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=80456), auto;
+  z-index: 20;
+}
+#datetime {
+  position: fixed;
+  right: 50px;
+  top: -4px;
+  padding: 3px 5px 3px 5px;
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=80456), auto;
+  z-index: 60;
+}
+
+/* body content stylets */
+h1 {
+  position: absolute;
+  top: 13%;
+  left: 45%;
+}
+.orderBody {
+  position: absolute;
+  top: 23%;
+  margin-left: 28%;
+  width: 50%;
+  font-size: 18px;
+}
+.order {
+  position: absolute;
+  top: 35%;
+  margin-left: 28%;
+}
+.txtBoxOrder1{
+  width: 200px;
+  height: 40px;
+  font-size: 10px;
+}
+.txtBoxOrder2{
+  width: 200px;
+  height: 40px;
+}
+.backButton {
+  position:absolute;
+  top: 70%;
+  left: 45%;
+  font-family: 'Staatliches', cursive;
+  font-size: 14px;
+  border: 1px solid black;
+  background: none;
+  padding: 0.3rem;
+}
+.backButton:hover {
+  border: 1px solid white;
+  color: white;
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=80456), auto;
+}
+.orderButton {
+  position:absolute;
+  top: 70%;
+  left: 28.5%;
+  font-family: 'Staatliches', cursive;
+  font-size: 14px;
+  border: 1px solid black;
+  background: none;
+  padding: 0.3rem;
+}
+.orderButton:hover {
+  border: 1px solid white;
+  color: white;
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=80456), auto;
+}
+.cake {
+  width: 250px;
+  position: absolute;
+  top: 30%;
+  left: 43%;
+}
+.backButton2 {
+  position:absolute;
+  top: 70%;
+  left: 50%;
+  font-family: 'Staatliches', cursive;
+  font-size: 14px;
+  border: 1px solid black;
+  background: none;
+  padding: 0.3rem;
+}
+.backButton2:hover {
+  border: 1px solid white;
+  color: white;
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=80456), auto;
+}
+
+
+@media screen and (max-width: 414px){
+  h1 {
+    position: absolute;
+    top: 13%;
+    left: 31%;
+  }
+  .orderBody {
+    font-size: 16px;
+    width: 53%;
+  }
+}

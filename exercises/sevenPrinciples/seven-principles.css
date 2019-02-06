@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+h1{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 36px;
+  text-align: center;
+}
+h2{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+
+h3{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 28px;
+  text-align: center;
+}
+
+h4{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 28px;
+}
+
+.intro{
+  text-align: center;
+}
+
+a:link{
+  color: black;
+}
+a:visited{
+  color: gray;
+}

@@ -1,0 +1,72 @@
+/* typefaces */
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+
+
+/* text styles */
+html {
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=75175), auto;
+}
+body {
+  background-color: #FFEBF8;
+  font-family: 'Staatliches', cursive;
+}
+h1 {
+  font-size: 50px;
+  text-align: center;
+  position: fixed;
+  left: 40vw;
+  top: 20vh;
+}
+.intro {
+  font-size: 25px;
+  position: fixed;
+  left: 39vw;
+  top: 58vh;
+}
+
+/* image styles */
+.imgclick {
+  width: 150px;
+  position: fixed;
+  left: 44vw;
+  top: 38vh;
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=80456), auto;
+}
+.imgNotice {
+  width: 430px;
+  position: fixed;
+  left: 33.8vw;
+  top: 12vh;
+  z-index: -10;
+}
+
+@media screen and (max-width: 414px) {
+  /*  do your magic here!  */
+  h1 {
+    font-size: 35px;
+    text-align: center;
+    position: fixed;
+    left: 30%;
+    top: 28%;
+  }
+  .intro {
+    font-size: 16px;
+    position: fixed;
+    left: 29%;
+    top: 53%;
+  }
+  .imgclick {
+    width: 110px;
+    position: fixed;
+    left: 39%;
+    top: 38%;
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=80456), auto;
+  }
+  .imgNotice {
+    width: 250px;
+    position: fixed;
+    left: 21%;
+    top: 25%;
+    z-index: -10;
+  }
+}

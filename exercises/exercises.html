@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercises</title>
+    <link rel="stylesheet" href="exercises.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="exercises.js"></script>
+  </head>
+
+  <body>
+    <!-- Testing grid sidebar:
+    <div class="gridContainer">
+      <div class="sideMenu">
+        <p class="menuX">&times; <a href="../index.html">&#x219A;</a></p>
+
+        <p class="menuItems"><a href="../index.html">home</a></p>
+        <p class="menuItems"><a href="../about/about.html">about me</a></p>
+        <p class="menuItems"><a href="../exercises/exercises.html">	&#x219B; exercises</a></p>
+        <p class="menuItems"><a href="../projects/projects.html">projects</a></p>
+        <p class="menuItems"><a href="../reading_responses/reading.html">reading responses</a></p>
+        <p class="menuItems"><a href="../processes/processes.html">processes</a></p>
+      </div>
+
+      <div class="gridContent">
+        <h1 class="titleBtn">Exercises</h1>
+          <ul class="btnMenu">
+            <a href="#ex1"><li>ex 1. Seven Principles</li></a>
+            <a href="#ex2"><li>ex 2. Josef Müller-Brockmann</li></a>
+          </ul> -->
+
+    <!-- side nav -->
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#x25CD;</a>
+            <div class="menu">
+              <a href="../index.html"><p>home</p></a>
+              <a href="../about/about.html"><p>about me</p></a>
+              <a href="../exercises/exercises.html"><p class="menuEx">exercises</p></a>
+              <a href="../projects/projects.html"><p>projects</p></a>
+              <a href="../reading_responses/reading.html"><p>reading responses</p></a>
+              <a href="../processes/processes.html"><p>processes</p></a>
+            </div>
+          </div>
+
+          <span class="navOpen" onclick="openNav()">&#x25CB;</span>
+
+    <!-- title  -->
+        <h1>Exercises</h1>
+
+    <!-- exercise 1 -->
+      <h2 id="ex1Title">Exercise 1</h2>
+        <div id="ex1" class="ex1Info">
+          <h3>Seven Principles</h3>
+          <p class="style"><b>. exercise 1 .</b> <br> Practice styling text using HTML and CSS.</p>
+
+          <a href="sevenPrinciples/seven-principles.html">
+            <img class="imgEx1" src="imgSevenPrinciples.png" alt="image of excerise 1 Seven Principles webpage">
+          </a>
+
+          <div class="notes"><b>. notes .</b>
+              <p class="style">
+              The Seven Principles exercise helped us practice what we learned for HTML and CSS during the first week of Web Design class. We were given a large body of text to stylize as a website. This was the first time I tried stylizing HTML content but it wasn't too hard, especially after watching the Lynda videos before coding.
+            </p>
+          </div>
+        </div>
+
+    <!-- exercise 2 -->
+      <h2 id="ex2Title">Exercise 2</h2>
+        <div id="ex2" class="ex2Info">
+          <h3>Joseph Müller-Brockmann</h3>
+          <p class="style"><b>. exercise 2 .</b> <br> Recreate a Joseph Müller-Brockmann poster using just HTML and CSS. Then add transitions and animations that seem appropriate for your forms. You can also experiment with positioning, manipulating, and animating SVGs.</p>
+
+          <a href="exercise1/exercise1.html">
+            <img class="imgEx2" src="imgPoster.png" alt="image of excerise 2 webpage">
+          </a>
+
+          <div class="notes"><b>. notes .</b>
+            <p class="style">
+            Unlike the first exercise, this exercise prompted us to experiment using more complex features of HTML and CSS, such as creating and animating shapes, using hovers and understanding basic design principles. I previously learned about Josef Müller-Brockmann's geometric and simple posters about music during my GD classes and wanted to created something that could reflect those traits using movement.
+            </p>
+            <p class="style">
+            The orange rectangles shift up and down at different speeds depending on it's visual "weight" when the user hovers on top of the shape. It was interesting to see the effects of animating posters and how they changed the meaning/feeling from the original portrait poster. It was also fun to play around with z-index to hide and emphasize parts of the poster.
+            </p>
+          </div>
+        </div>
+      <!-- </div> -->
+
+
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Birthday Cards: Cake</title>
+    <link rel="stylesheet" href="project3.cake.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="pageTop">
+      <a href="project3.2.html">
+        <p class="txt1"><b>Jina Choi</b></p>
+      </a>
+      <button class="txt2Button">file</button>
+        <ul class="txtFile">
+          <a href="project3.about.html" class="logout"><li>about</li></a>
+          <a href="project3.html" class="logout"><li>log out</li></a>
+        </ul>
+      <p class="txt4">Jan 25 1998</p>
+      <p id="datetime"></p>
+    </div>
+
+    <div class="pageBody">
+      <h1 class="orderTitle">Special Orders</h1>
+      <p class="orderBody">Send us a description of your dream birthday cake and your cake will magically appear on your birthday!</p>
+
+      <div class="order">
+          <p>when is your birthday? (M/D/Y)</p>
+          <textarea class="txtBoxOrder1"></textarea>
+
+          <p>Describe your cake here:</p>
+          <textarea class="txtBoxOrder2"></textarea>
+      </div>
+
+      <a href="project3.cake.2.html"><button class="orderButton">order</button></a>
+      <a href="project3.2.html"><button class="backButton">back</button></a>
+    </div>
+  </body>
+
+  <script>
+    // date (real time)
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+
+    // buttons
+    $(document).ready(function(){
+      $(".txt2Button").click(function(){
+        $(".txtFile").toggle();
+      });
+    });
+  </script>
+</html>

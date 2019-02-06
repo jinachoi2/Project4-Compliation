@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jina -Web Design 2019</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Test -->
+    <!-- <div id="light"></div>
+    <div id="content">
+      <div>
+        <h1>Header 1</h1>
+      </div>
+      <div>
+        <h1>Header 2</h1>
+      </div>
+      <div class="pogi">
+        <h1>hello hello hello</h1>
+      </div>
+    </div> -->
+
+    <div class="preface">
+      <div class="prefaceBox">
+        <h1 class="prefaceTitle">welcome!</h1>
+        <p class="prefaceTxt3">. scroll + click + explore .</p>
+        <button class="enterBtn">enter</button>
+      </div>
+    </div>
+
+    <div class="title">
+      <h1 class="titleWelcome">hello</h1>
+      <p>web design winter session 2019</p>
+      <p class="titleJina">jina</p>
+    </div>
+
+
+      <a href="about/about.html"><div class="aboutMe">
+        <p class="aboutMeTitle">ABOUT</p>
+        <p class="aboutMeTitle2">ME</p>
+      </div></a>
+
+      <a href="exercises/exercises.html"><div class="exercise">
+        <p class="exercisePreTitle"><b>exercises</b></p>
+        <p class="exerciseTitle"></p>
+      </div></a>
+
+      <a href="projects/projects.html"><div class="projects">
+        <p class="projectsTitle">PROJECTS</p>
+      </div></a>
+
+      <a href="reading_responses/reading.html"><div class="readings">
+          <p class="readingsTitle">readings + responses</p>
+      </div></a>
+
+      <a href="processes/processes.html"><div class="process">
+          <p class="processTitle">process</p>
+      </div></a>
+
+  </body>
+
+  <script>
+  	$(document).ready(function() {
+  		$("body").mousemove(function(e){
+  			$("body").css('background-position',(e.pageX - 250)+'px '+(e.pageY - 250)+'px');
+  		});
+  	});
+
+    $(document).ready(function(){
+      $(".enterBtn").click(function(){
+        $(".preface").remove();
+      });
+    });
+
+
+// Test
+    //     $(document).ready(function() {
+    //   $(this).mousemove(function(e) {
+    //     $("#light").css({
+    //       "top": e.pageY - 250,
+    //       "left": e.pageX - 250
+    //     })
+    //   }).mousedown(function(e) {
+    //     switch (e.which) {
+    //         case 1:
+    //             $("#light").toggleClass("light-off");
+    //             break;
+    //         case 2:
+    //             console.log('Middle Mouse button pressed.');
+    //             break;
+    //         case 3:
+    //             console.log('Right Mouse button pressed.');
+    //             break;
+    //         default:
+    //             console.log('You have a strange Mouse!');
+    //     }
+    //   })
+    // })
+  </script>
+</html>
